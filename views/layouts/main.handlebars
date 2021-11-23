@@ -5,13 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>simple dashboard</title>
+
+    <!-- ========== wesbite styles Start ========== -->
     {{>styles}}
+    <!-- wesbite styles End -->
+
   </head>
   <body data-sidebar="dark">
-    {{>topbar}}
-    {{>sidebar}}
-    {{{body}}}
-    {{>footer}}
-    {{>scripts}}
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+      <!-- ========== Topbar Start ========== -->
+      {{>topbar}}
+      <!-- Topbar End -->
+      
+      <!-- ========== Left Sidebar Start ========== -->
+      {{>sidebar}}
+      <!-- Left Sidebar End -->
+
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="main-content">
+        <div class="page-content">
+          <div class="container-fluid">
+            {{{body}}}
+          </div>
+        </div>
+      </div>
+      <!-- end main content-->
+
+      <!-- ========== Footer Start ========== -->
+      {{>footer}}
+      <!-- Footer End -->
+      
+      <!-- Right bar overlay-->
+      <div class="rightbar-overlay"></div>
+
+      <!-- ========== wesbite scripts Start ========== -->
+      {{>scripts}}
+      <!-- wesbite scripts End -->
+
+    </div>
+    <!-- END layout-wrapper -->
   </body>
 </html>

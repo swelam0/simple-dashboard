@@ -1,0 +1,3 @@
+body[data-sidebar="dark"].vertical-collpsed{
+  min-height: 100vh;
+}
