@@ -14,7 +14,7 @@
         (e[t].parentElement.classList.remove("active"),
         e[t].nextElementSibling.classList.remove("show"));
   }
-  // function t(e) {
+  function t(e) {
   //   1 == n("#light-mode-switch").prop("checked") && "light-mode-switch" === e
   //     ? (n("html").removeAttr("dir"),
   //       n("#dark-mode-switch").prop("checked", !1),
@@ -37,7 +37,7 @@
   //       n("#app-style").attr("href", "assets/css/app-rtl.min.css"),
   //       n("html").attr("dir", "rtl"),
   //       sessionStorage.setItem("is_visited", "rtl-mode-switch"));
-  // }
+  }
   function e() {
     document.webkitIsFullScreen ||
       document.mozFullScreen ||
